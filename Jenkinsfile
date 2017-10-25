@@ -57,7 +57,7 @@ node {
             from: 'jenkins@teradisk.com',
             subject: 'project build failed',
             to: 'cicd@teradisk.com'
-
+        sh 'sudo kitchen destroy'
         throw err
     }
 
